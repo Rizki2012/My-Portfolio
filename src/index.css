@@ -1,0 +1,249 @@
+/* =============== Font Google =============== */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: var(--trans);
+}
+
+/* =============== :ROOT =============== */
+:root {
+  --body: #fbf8f1;
+  --blue: #00d7ff;
+  --red: #ff6464;
+  --white: #ededed;
+  --black: #393e46;
+
+  --trans: all 0.3s linear;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-ms: 90%;
+}
+
+.light-theme {
+  --body: #252525;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 5rem;
+}
+
+*::selection {
+  color: #00ffab;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  background: var(--body);
+  line-height: 1.7;
+}
+
+/* =============== General Styles =============== */
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 8rem;
+}
+
+.teks__dec,
+.teks__thumb {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--black);
+}
+
+.teks__thumb span {
+  color: var(--red);
+}
+
+section > h2 {
+  color: var(--red);
+  margin-bottom: 3rem;
+}
+
+.text-light {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--red);
+  transition: var(--trans);
+}
+
+a:hover {
+  color: var(--black);
+}
+
+/* =============== Button =============== */
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--black);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--red);
+  transition: var(--trans);
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ========== Dark Mode ========== */
+
+.light-theme .light__mode span {
+  color: #fff;
+}
+
+.light-theme .teks__thumb span {
+  color: var(--blue);
+}
+
+.light-theme section > h2 {
+  color: #fff;
+}
+
+.light-theme a {
+  color: var(--blue);
+}
+
+.light-theme a:hover {
+  color: var(--white);
+}
+
+.light-theme .btn {
+  border-radius: 0.4rem;
+  border: 1px solid var(--blue);
+}
+
+.light-theme .btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.light-theme .btn-primary {
+  background: var(--blue);
+}
+
+/* =============== MAX Media Query =============== */
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+  .container {
+    width: var(--container-width-md);
+  }
+  section {
+    padding-top: 2rem;
+  }
+}
+
+/* =============== MAX Media Query =============== */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-ms);
+  }
+  section {
+    padding-top: 2rem;
+  }
+  .light__mode span {
+    left: 83%;
+    top: 30px;
+    height: 6.5vh;
+    width: 50px;
+  }
+}
+
+/* =============== MAX Media Query =============== */
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 60%;
+  }
+  .container {
+    width: var(--container-width-lg);
+  }
+  section {
+    padding-top: 2rem;
+  }
+}
+
+/* =============== MIN Media Query =============== */
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 62.8%;
+  }
+  section {
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+  nav {
+    padding: 0.9rem 2.5rem;
+  }
+  nav a {
+    font-size: 2rem;
+  }
+  .light__mode span {
+    font-size: 3.2rem;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 85%;
+  }
+}

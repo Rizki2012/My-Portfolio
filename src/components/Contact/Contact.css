@@ -1,0 +1,130 @@
+.container.contact__container {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: transparent;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 10px double var(--red);
+  transition: var(--trans);
+  cursor: pointer;
+}
+
+.contact__option:hover {
+  background: var(--red);
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--black);
+}
+
+.contact__option a {
+  margin-top: 0.9rem;
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.contact__option a:hover {
+  color: var(--white);
+}
+
+.contact__option h4,
+.name {
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.contact__option .name {
+  color: var(--black);
+}
+
+/* ========== Form ========== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 5px double var(--red);
+  resize: none;
+  color: var(--black);
+}
+
+/* ========== Dark Mode ========== */
+
+.light-theme .contact__option {
+  border: 10px double var(--blue);
+}
+
+.light-theme .contact__option:hover {
+  background: var(--blue);
+}
+
+.light-theme .contact__option-icon {
+  color: var(--white);
+}
+
+.light-theme .contact__option a {
+  color: var(--white);
+}
+
+.light-theme .contact__option a:hover {
+  color: var(--black);
+}
+
+.light-theme .contact__option h4,
+.contact__option h5 {
+  color: var(--white);
+}
+
+.light-theme input {
+  border: 5px double var(--blue);
+  color: var(--white);
+}
+
+.light-theme textarea {
+  border: 5px double var(--blue);
+  color: var(--white);
+}
+
+.light-theme .name {
+  color: var(--white);
+}
+
+/* ========== Media Query ========== */
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ========== Media Query ========== */
+
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: var(--container-width-sm);
+  }
+}

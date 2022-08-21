@@ -1,0 +1,162 @@
+.footer {
+  padding: 60px 0px;
+  border-top: 3px solid var(--red);
+  margin-top: 45px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2.5rem;
+}
+
+.icon {
+  display: flex;
+  column-gap: 1.5rem;
+  margin-top: 15px;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.icon a {
+  color: var(--black);
+}
+
+.icon a:hover {
+  color: var(--red);
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+.footer__logo {
+  width: 40%;
+}
+
+.footer__quick-links {
+  width: 20%;
+}
+
+.footer__logo h2 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.small__text {
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.quick__links-title {
+  font-size: 1.3rem;
+  color: var(--black);
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.quick__link-item {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.quick__link-item .jam {
+  color: var(--black);
+}
+
+.quick__link-item a {
+  font-size: 1.1rem;
+  font-weight: 300;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.quick__link-item a:hover {
+  color: var(--red);
+}
+
+.copyright {
+  color: var(--black);
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Dark Mode */
+
+.light-theme .footer {
+  border-top: 3px solid var(--blue);
+}
+
+.light-theme .description {
+  color: var(--white);
+}
+
+.light-theme .footer__logo h2 {
+  color: var(--white);
+}
+
+.light-theme .quick__links-title {
+  color: var(--white);
+}
+
+.light-theme .quick__link-item a {
+  font-weight: 500;
+  color: var(--white);
+}
+.light-theme .icon a {
+  color: var(--white);
+}
+
+.light-theme .copyright {
+  color: var(--white);
+}
+
+.light-theme .choose__us-title {
+  color: var(--white) !important;
+}
+
+.light-theme .quick__link-item .jam {
+  color: var(--white);
+}
+
+.light-theme .icon a:hover {
+  color: var(--blue);
+}
+
+.light-theme .quick__link-item a:hover {
+  color: var(--blue);
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__logo {
+    width: 50%;
+  }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    column-gap: 1.5rem !important;
+    row-gap: 1.5rem;
+  }
+
+  .footer__logo h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__quick-links {
+    width: 47%;
+  }
+  .footer__logo {
+    width: 47%;
+  }
+  .quick__link-item {
+    margin-bottom: 10px;
+  }
+  .small__text {
+    margin-top: 20px;
+  }
+}
